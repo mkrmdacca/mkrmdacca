@@ -18,7 +18,7 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(936.8750610351562, -0.43846702575683594, -1407.1441650390625);
+tp(938.7890625, -2.1792330741882324, -1406.117431640625);
 wait(5)
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
@@ -33,7 +33,7 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(912.3344116210938, -0.06029307842254639, -1418.4068603515625);
+tp(913.0758056640625, -1.0205737352371216, -1417.84130859375);
 wait(5)
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
@@ -48,7 +48,7 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(945.745361328125, -0.8719309568405151, -1433.133544921875);
+tp(945.872802734375, -2.8146934509277344, -1432.4969482421875);
 wait(5)
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
@@ -63,7 +63,7 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(964.2133178710938, -1.3502542972564697, -1391.602783203125);
+tp(964.0872192382812, -3.000002384185791, -1391.9796142578125);
 wait(5)
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
@@ -78,7 +78,7 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(920.1753540039062, -1.3658621311187744, -1387.543701171875);
+tp(919.29638671875, -3.000002384185791, -1387.78662109375);
 wait(5)
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
@@ -93,4 +93,4 @@ function tp(...)
    end)
    if not tween then return err end
 end
-tp(936.8750610351562, -0.43846702575683594, -1407.1441650390625);
+tp(938.7890625, -2.1792330741882324, -1406.117431640625);
