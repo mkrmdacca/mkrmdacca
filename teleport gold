@@ -97,5 +97,5 @@ function tp(...)
    if not tween then return err end
 end
 tp(938.7890625, -2.1792330741882324, -1406.117431640625);
-wait(185)
+wait(180)
 end
