@@ -7,7 +7,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/mkrmdacca/mkrmdacca/r
 
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(4,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -22,7 +22,7 @@ tp(936.8750610351562, -0.43846702575683594, -1407.1441650390625);
 wait(5)
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(4,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -37,7 +37,7 @@ tp(912.3344116210938, -0.06029307842254639, -1418.4068603515625);
 wait(5)
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(4,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -52,7 +52,7 @@ tp(945.745361328125, -0.8719309568405151, -1433.133544921875);
 wait(5)
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(4,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -67,7 +67,7 @@ tp(964.2133178710938, -1.3502542972564697, -1391.602783203125);
 wait(5)
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(4,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
@@ -82,7 +82,7 @@ tp(920.1753540039062, -1.3658621311187744, -1387.543701171875);
 wait(5)
 local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
-local info = TweenInfo.new(2,Enum.EasingStyle.Quad);
+local info = TweenInfo.new(4,Enum.EasingStyle.Quad);
 function tp(...)
    local tic_k = tick();
    local params = {...};
