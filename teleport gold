@@ -4,6 +4,8 @@ loadstring(game:HttpGet("https://pastebin.com/raw/mZcMFpY9"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/mkrmdacca/mkrmdacca/refs/heads/main/teleport%20gold"))()
 
 ]]
+_G.Autofarmgold=false
+wait(.1)
 _G.Autofarmgold=true
 while _G.Autofarmgold==true do 
 local plr = game:service"Players".LocalPlayer;
@@ -95,5 +97,5 @@ function tp(...)
    if not tween then return err end
 end
 tp(938.7890625, -2.1792330741882324, -1406.117431640625);
-wait(305)
+wait(185)
 end
