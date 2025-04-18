@@ -151,7 +151,6 @@ end
 
 	local function playanim(id,speed,isadance,custominstance)
 	    if _G.OxideFakeChar == nil then 
-	        game.Players.LocalPlayer:Kick("Use Oxide stupid ass bitch")
 	        end
         playanother = true 
         loopsplaying+=1
