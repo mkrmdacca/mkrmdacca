@@ -945,7 +945,7 @@ char.Humanoid:GetPropertyChangedSignal("MoveDirection"):Connect(function()
             playanim(0,1,false,idleanim )
             end
         elseif char.Humanoid.MoveDirection ~= Vector3.new(0,0,0) and dancing == false and walking == false then 
-            char.Humanoid.WalkSpeed = 14*char:GetScale()
+            char.Humanoid.WalkSpeed = 16*char:GetScale()
             walking = true
             idle = false
             stopanim()
