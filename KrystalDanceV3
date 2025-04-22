@@ -352,7 +352,7 @@ end
                 idle = true 
                 char.Humanoid:Move(Vector3.new(0,0,-1),true)
                 walking = false 
-                wait(.065)
+                task.wait()
                 if walking == true and idle == false and  char.Humanoid.MoveDirection ~= Vector3.new(0,0,0) and dancing == false and playanother==true  then 
                 task.spawn(function()
                 playanim(136078657506707,1,false)
@@ -381,6 +381,7 @@ tool.Name = "ratdance"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
             stopanim()
             wait()
 dancing = true
@@ -401,6 +402,7 @@ tool.Name = "boogiedown"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -423,6 +425,7 @@ tool.Name = "dancing"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -446,6 +449,7 @@ tool.Name = "unlockit"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
 	stopanim()
     wait()
 dancing = true
@@ -468,6 +472,7 @@ tool.Name = "Entranced Emote"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -490,6 +495,7 @@ tool.Name = "Automatic"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -512,6 +518,7 @@ tool.Name = "KeyframeSequence"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
 dancing = true
@@ -534,6 +541,7 @@ tool.Name = "Billy Bounce"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -555,6 +563,7 @@ tool.Name = "gangnam"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -575,6 +584,7 @@ tool.Name = "NPC_Idle"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -595,6 +605,7 @@ tool.Name = "Starlit"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -615,6 +626,7 @@ tool.Name = "drlivesey"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -637,6 +649,7 @@ tool.Name = "griddy"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -659,6 +672,7 @@ tool.Name = "luxurious"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -679,6 +693,7 @@ tool.Name = "KeyframeSequence"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -699,6 +714,7 @@ tool.Name = "Spongebob"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -719,6 +735,7 @@ tool.Name = "bang"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -739,6 +756,7 @@ tool.Name = "Nerdy"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -759,6 +777,7 @@ tool.Name = "frostgazer"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -779,6 +798,7 @@ tool.Name = "Falling Down"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -799,6 +819,7 @@ tool.Name = "I'm a mystery"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -819,6 +840,7 @@ tool.Name = "slickback"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -840,6 +862,7 @@ tool.Name = "True Heart"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -860,6 +883,7 @@ tool.Name = "Rewind"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -880,6 +904,7 @@ tool.Name = "9"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -900,6 +925,7 @@ tool.Name = "chrono"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
@@ -920,6 +946,7 @@ tool.Name = "KeyframeSequence"
 tool.RequiresHandle = false
 
 tool.Equipped:Connect(function()
+wait(.3)
     stopanim()
     wait()
     dancing = true
