@@ -962,6 +962,50 @@ tool.Unequipped:Connect(function()
 end)
 tool.Parent = backpack
 
+local tool = Instance.new("Tool")
+tool.Name = "Floss"
+tool.RequiresHandle = false
+
+tool.Equipped:Connect(function()
+wait(.3)
+    stopanim()
+    wait()
+    dancing = true
+    task.wait(.005)
+    sound69.SoundId = customasset("Dances/floss.mp3")
+    sound69:Play()
+    playanim(107287295776925)
+end)
+
+tool.Unequipped:Connect(function()
+    stopanim()
+    sound69:Stop()
+end)
+tool.Parent = backpack
+
+local tool = Instance.new("Tool")
+tool.Name = "Hakari"
+tool.RequiresHandle = false
+
+tool.Equipped:Connect(function()
+wait(.3)
+    stopanim()
+    wait()
+    dancing = true
+    task.wait(.005)
+    sound69.SoundId = customasset("Dances/Hakari.mp3")
+    sound69:Play()
+    playanim(92699725136780)
+end)
+
+tool.Unequipped:Connect(function()
+    stopanim()
+    sound69:Stop()
+end)
+tool.Parent = backpack
+
+
+-- ⚠️
 char.Humanoid:GetPropertyChangedSignal("MoveDirection"):Connect(function()
     if char.Humanoid.MoveDirection == Vector3.new(0,0,0) and dancing == false and idle == false then
     walking = false
