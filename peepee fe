@@ -37,7 +37,9 @@ _G.CH = {
     }
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/mkrmdacca/mkrmdacca/refs/heads/main/Reanimation%20v2"))() 
-wait(13)
+task.wait(3)
+_G.OxideFakeChar:ScaleTo(1)
+task.wait(game.Players.RespawnTime*2)
 local reclaim = true --if you lost control over a part this will move your primary part to the part so you get it back
 local novoid = true --prevents parts from going under workspace.FallenPartsDestroyHeight if you control them
 local antiragdoll = true --removes instances that are usually used for ragdolling form your character
@@ -50,10 +52,10 @@ local jumpPower = 50 --your jump power (can be changed at runtime)
 local allowshiftlock = true --allows the user to use shiftlock (can be changed at runtime)
 local gravity = 196.2 --how fast the characters velocity increases while falling (can be changed at runtime)
 local simrad = 1000 --sets simulation radius to this with sethiddenproperty (nil to disable)
-local loadtime = game:GetService("Players").RespawnTime + 0.5 --anti respawn delay for method 1
+local loadtime = game:GetService("Players").RespawnTime + 1 --anti respawn delay for method 1
 local method = 0 --reanimation method
 local ctrlclicktp = true --makes you teleport where u point ur mouse cursor at when click and hold ctrl down
-local clickfling = 2 --click fling mode
+local clickfling = 0 --click fling mode
 local maxflingtrsp = 0.5 --max transparency of the fling part (if its above this it will be set to this)
 
 local ws, rs = game:GetService("Workspace"), game:GetService("RunService")
