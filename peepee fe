@@ -904,14 +904,6 @@ LeftHip.C0=LeftHip.C0:Lerp(cf(0.5,-1.24,0.05 * sin(sine*4))*angles(0,0,0),deltaT
 		end
 	})
  
-	addmode("q", {
-		idle = function()
-			local Cfw, Crt = velchgbycfrvec()
- 
- 
-			end
-	})
- 
 	addmode("x", {
 		idle = function()
 			local Cfw, Crt = velchgbycfrvec()
