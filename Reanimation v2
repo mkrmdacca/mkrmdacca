@@ -1,4 +1,49 @@
+--[[
+-- gh 5674299814,5674297809
+_G.HideCharacter = true
+_G.FlingEnabled = false
+_G.TransparentRig = true
+_G.ToolFling = false -- false = holding, true = fling
+_G.AntiFling = true
+_G.HatCollide = false
+_G.CustomHats = true -- Enable or disable custom rig feature (basically old oxide when false)
+_G.CH = {
+    Head = {
+        Name = "YourHatName",
+        TextureId = "TextureIDHere",
+        Orientation = CFrame.Angles(0, 0, 0)
+    },
+    Torso = {
+        Name= "",
+        TextureId = "",
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(0))
+    },
+    LeftArm = {
+        Name= "Accessory (LArmNoob)",
+        TextureId = "135650240593878", 
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
+    },
 
+    RightArm = {
+        Name= "Accessory (RArmNoob)",
+        TextureId = "135650240593878", 
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(-90))
+    },
+
+    LeftLeg = {
+        Name= "MeshPartAccessory",
+        TextureId = "5673921472", 
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
+    },
+
+    RightLeg = {
+        Name= "MeshPartAccessory",
+        TextureId = "5673921282", 
+        Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(-90))
+    }
+}
+
+]]
 if _G.Scale == nil then
 _G.Scale = 1
 end
@@ -45,9 +90,9 @@ _G.R6Mode = false
 _G.MiztCompat = true
 _G.Fling = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Oxide Reanimation V3.6";
+	Title = "nigger Reanimation V3.6";
 	Duration = 20;
-	Text = "This script was made by Hemi"
+	Text = "This script was made by nigger"
 })
 local function cfAdd(a,b) return a+b end
 pcall(function()
@@ -56,98 +101,81 @@ game:GetService("CoreGui"):WaitForChild("TopBarApp"):WaitForChild("FullScreenFra
 end)
 end)
 local Hat = {
-	Rename = function(HatID, NAME, oname)
-    pcall(function()
-		if oname == nil then oname = "Hat" end
-		for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
-			if v:IsA("Accessory") then
-				if game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
-					if v:WaitForChild("Handle"):FindFirstChildWhichIsA("SpecialMesh").TextureId == HatID then
-						if oname == "Hat" then
-							v.Name = NAME
-						elseif oname == "LARM" then
-							v.Name = "fooblet"
-						elseif oname == "RARM" then
-							v.Name = "gooblet"
-						else
-							v.Name = NAME
-						end
-					end
-				elseif game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 and v.Handle.TextureId == HatID  then
-					if oname == "Hat" then
-						v.Name = NAME
-					elseif oname == "LARM" then
-						v.Name = "fooblet"
-					elseif oname == "RARM" then
-						v.Name = "gooblet"
-					else
-						v.Name = NAME
-					end
-				elseif game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
-					if v.Handle.TextureID == HatID then
-						if oname == "Hat" then
-							v.Name = NAME
-						elseif oname == "LARM" then
-							v.Name = "fooblet"
-						elseif oname == "RARM" then
-							v.Name = "gooblet"
-						else
-							v.Name = NAME
-						end
-					end
-				end
-			end
-		end
-                    end)
-	end,
-	Rename2 = function(HatID, NAME,rname, oname)
-    pcall(function()
-		if oname == nil then oname = "Hat" end
-		for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
-			if v:IsA("Accessory") then
-				if game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
-					if v:WaitForChild("Handle"):FindFirstChildWhichIsA("SpecialMesh").TextureId == HatID then
-						if v.Name == rname then
-							if oname == "Hat" then
-								v.Name = NAME
-							elseif oname == "LARM" then
-								v.Name = "fooblet"
-							elseif oname == "RARM" then
-								v.Name = "gooblet"
-							else
-								v.Name = NAME
-							end
-						end
-					end
-				elseif game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 and v.Handle.TextureId == HatID  then
-					if v.Name == rname then
-						if oname == "Hat" then
-							v.Name = NAME
-						elseif oname == "LARM" then
-							v.Name = "fooblet"
-						elseif oname == "RARM" then
-							v.Name = "gooblet"
-						else
-							v.Name = NAME
-						end
-					end
-				elseif game:GetService("Players").LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
-					if v.Name == rname then
-						if oname == "Hat" then
-							v.Name = NAME
-						elseif oname == "LARM" then
-							v.Name = "fooblet"
-						elseif oname == "RARM" then
-							v.Name = "gooblet"
-						else
-							v.Name = NAME
-						end
-					end
-				end
-			end
-		end
-                        end)
-	end,}
+    Rename = function(HatID, NAME, oname)
+        pcall(function()
+            if oname == nil then oname = "Hat" end
+            local character = game:GetService("Players").LocalPlayer.Character
+            local humanoid = character:FindFirstChildOfClass("Humanoid")
+            
+            for i, v in pairs(character:GetChildren()) do
+                if v:IsA("Accessory") then
+                    local isR15 = humanoid.RigType == Enum.HumanoidRigType.R15
+                    local textureMatch = false
+                    
+                    -- Check for texture match based on rig type
+                    if isR15 then
+                        -- For R15: Check TextureID directly on Handle
+                        textureMatch = tostring(v.Handle.TextureID) == tostring(HatID)
+                    else
+                        -- For R6: Check SpecialMesh TextureId
+                        local mesh = v.Handle:FindFirstChildWhichIsA("SpecialMesh")
+                        if mesh then
+                            textureMatch = tostring(mesh.TextureId) == tostring(HatID)
+                        end
+                    end
+
+                    if textureMatch then
+                        if oname == "Hat" then
+                            v.Name = NAME
+                        elseif oname == "LARM" then
+                            v.Name = "fooblet"
+                        elseif oname == "RARM" then
+                            v.Name = "gooblet"
+                        else
+                            v.Name = NAME
+                        end
+                    end
+                end
+            end
+        end)
+    end,
+    
+    Rename2 = function(HatID, NAME, rname, oname)
+        pcall(function()
+            if oname == nil then oname = "Hat" end
+            local character = game:GetService("Players").LocalPlayer.Character
+            local humanoid = character:FindFirstChildOfClass("Humanoid")
+            
+            for i, v in pairs(character:GetChildren()) do
+                if v:IsA("Accessory") and v.Name == rname then
+                    local isR15 = humanoid.RigType == Enum.HumanoidRigType.R15
+                    local textureMatch = false
+                    
+                    if isR15 then
+                        textureMatch = tostring(v.Handle.TextureID) == tostring(HatID)
+                    else
+                        local mesh = v.Handle:FindFirstChildWhichIsA("SpecialMesh")
+                        if mesh then
+                            textureMatch = tostring(mesh.TextureId) == tostring(HatID)
+                        end
+                    end
+
+                    if textureMatch then
+                        if oname == "Hat" then
+                            v.Name = NAME
+                        elseif oname == "LARM" then
+                            v.Name = "fooblet"
+                        elseif oname == "RARM" then
+                            v.Name = "gooblet"
+                        else
+                            v.Name = NAME
+                        end
+                    end
+                end
+            end
+        end)
+    end
+}
 local function redo()
 	local gay = true -- dont edit >:(
 	hmode = nil
@@ -1455,7 +1483,7 @@ pcall(function()
 end
 redo()
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Oxide Reanimation V3.6 - Respawn Time";
+	Title = "nigger Reanimation V3.6 - Respawn Time";
 	Duration = 20;
 	Text = "Your character will respawn every "..game:GetService("Players").RespawnTime.." seconds."
 })
@@ -1537,7 +1565,7 @@ respawnloop = plr.CharacterAdded:Connect(function(re)
 								n=n+.05
 							until  flingpart.AssemblyLinearVelocity.X <= 3500 and n >= .5 or n >= 1
 							game:GetService("StarterGui"):SetCore("SendNotification", {
-								Title = "Oxide Reanimation V3.6 - Fling:";
+								Title = "nigger Reanimation V3.6 - Fling:";
 								Duration = 5;
 								Text = "Successfully flung: ".._G.flingplr.." in: "..n.." seconds!"
 							})
@@ -1608,7 +1636,7 @@ getgenv().attackuno= function(part)
 					_G.flingpart = flingpart
 					_G.flingplr = tostring(flingpart.Parent:FindFirstChildOfClass("Humanoid").DisplayName.." (@"..flingpart.Parent.Name..")")
 					game:GetService("StarterGui"):SetCore("SendNotification", {
-						Title = "Oxide Reanimation V3.6 - Fling:";
+						Title = "nigger Reanimation V3.6 - Fling:";
 						Duration = 3;
 						Text = "Locked onto player: "..flingpart.Parent:FindFirstChildOfClass("Humanoid").DisplayName.." (@"..flingpart.Parent.Name..")"
 					})
@@ -1631,7 +1659,7 @@ getgenv().attackuno= function(part)
 						_G.flingpart = flingpart:FindFirstChild("HumanoidRootPart")
 						_G.flingplr = tostring(flingpart:FindFirstChildOfClass("Humanoid").DisplayName.." (@"..flingpart.Name..")")
 						game:GetService("StarterGui"):SetCore("SendNotification", {
-							Title = "Oxide Reanimation V3.6 - Fling:";
+							Title = "nigger Reanimation V3.6 - Fling:";
 							Duration = 3;
 							Text = "Locked onto player: "..flingpart:FindFirstChildOfClass("Humanoid").DisplayName.." (@"..flingpart.Name..")"
 						})
@@ -1703,5 +1731,3 @@ if k.KeyCode == Enum.KeyCode.Minus then
 	velocity:Disconnect()
 end
 end)
-_G.OxideFakeChar:ScaleTo(_G.Scale)
-_G.OxideRealChar:ScaleTo(1)
