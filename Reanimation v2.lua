@@ -42,6 +42,11 @@ _G.CH = {
         Orientation= CFrame.Angles(math.rad(0),math.rad(0),math.rad(-90))
     }
 }
+_G.OxideFakeChar:ScaleTo(_G.Scale)
+_G.OxideRealChar:ScaleTo(1)
+task.wait(3)
+_G.OxideFakeChar:ScaleTo(1)
+task.wait(game.Players.RespawnTime*2)
 
 ]]
 if _G.Scale == nil then
